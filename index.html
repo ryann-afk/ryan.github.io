@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be My Valentine 💕</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" src="sounds/bgmusic.mp3" loop></audio>
+
+<div class="hearts"></div>
+
+<div id="home-btn" onclick="goHome()">🏠 Home</div>
+
+<div class="page" id="main-page">
+  <h1>Hey My Love 💖</h1>
+  <h2>Will you be my Valentine? 💘</h2>
+
+  <div class="buttons">
+    <button onclick="yesClicked()">Yes 💕</button>
+    <button id="no-btn" onmouseover="moveNo()">No 😜</button>
+  </div>
+</div>
+
+<div class="page hidden" id="surprise-page">
+  <h1>Yay 😍 babyyy Pick a Surprise 🎁</h1>
+
+  <div class="boxes">
+    <div class="box" onclick="openBox('letter')">💌</div>
+    <div class="box" onclick="openBox('memories')">📸</div>
+    <div class="box" onclick="openBox('kiss')">💋</div>
+  </div>
+
+  <button class="timeline-btn" onclick="showTimeline()">📅 Our Timeline</button>
+
+  <div id="content"></div>
+  <div id="timeline" class="hidden"></div>
+</div>
+
+<audio id="clickSound" src="sounds/click.mp3"></audio>
+<audio id="kissSound" src="sounds/kiss.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
